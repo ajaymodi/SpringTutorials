@@ -4,7 +4,8 @@
 <html>
 <body>
  
-I am feeling: ${ mood.feeling }.
-Click <a href="explanation/${mood.feeling}">here</a> to find explanation.
+I am feeling: ${ mood }.
+<br>
+${explanation }.
 </body>
 </html>
