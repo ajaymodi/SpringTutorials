@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import edu.asu.diging.tutorial.spring.domain.Mood;
  
 @Service
-public class MoodService {
+public class MoodService implements IMoodService{
  
     private List<String> moodList = new ArrayList<String>();
     private HashMap<String, String> explanationList = new HashMap<String, String> (); 
