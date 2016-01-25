@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+    "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <!-- Base definition -->
+    <definition name="base.definition" template="/WEB-INF/tiles/layouts/skeleton.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="currentPage" value="home" />
+    </definition>
+	<!-- Home pages -->
+	<definition name="home" extends="base.definition">
+		<put-attribute name="title" value="Quadriga - Login" />
+		<put-attribute name="content" value="/WEB-INF/views/home.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+
+	<!-- Explanation page -->
+	<definition name="explanation" extends="base.definition">
+		<put-attribute name="title" value="Explanation" />
+		<put-attribute name="content" value="/WEB-INF/views/explanation.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+    
+</tiles-definitions>
