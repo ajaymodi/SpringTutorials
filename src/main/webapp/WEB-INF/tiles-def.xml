@@ -9,15 +9,25 @@
     </definition>
 	<!-- Home pages -->
 	<definition name="home" extends="base.definition">
-		<put-attribute name="title" value="Quadriga - Login" />
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="title" value="Spring Tutorial" />
 		<put-attribute name="content" value="/WEB-INF/views/home.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
 	</definition>
 
 	<!-- Explanation page -->
 	<definition name="explanation" extends="base.definition">
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
 		<put-attribute name="title" value="Explanation" />
 		<put-attribute name="content" value="/WEB-INF/views/explanation.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+	
+	<!-- Explanation page -->
+	<definition name="about" extends="base.definition">
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="title" value="Explanation" />
+		<put-attribute name="content" value="/WEB-INF/views/about.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
 	</definition>
     
